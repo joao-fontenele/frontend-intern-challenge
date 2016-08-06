@@ -1,0 +1,175 @@
+@CHARSET "UTF-8";
+/*
+vermelho chaordic #AA1423
+texto de apoio #777
+linha e background #EEE
+*/
+body {
+    margin: 0em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    margin: 0.4em;
+}
+
+main {
+    background-color: #EEE;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+    font-weight: normal;
+    color: #AA1423;
+}
+
+.supportText {
+    color: #777;
+    font-size: 1em;
+}
+
+.box {
+    width: 40%;
+    /* background-color: yellow; */
+    margin: 0.5em auto;
+}
+
+.imgCenter {
+    display: block;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0.5em 0em;
+}
+
+.centerContainer {
+    width: 100%;
+    /* height: 200px; */
+    text-align: center;
+    position: relative;
+}
+
+.centerItem {
+    /* display: inline-block; */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+/*--------------------------------
+related to the newLinksSection
+--------------------------------*/
+#newLinkSection {
+    background-image: url(./Assets/background-home.jpg);
+    height: 500px;
+    color: white;
+}
+
+#newLinkSection h1 {
+    color: white;
+}
+
+#urlButton {
+    background-color: #FF6E14; /*darkOrange*/
+    border: none;
+    color: white;
+    padding: 0.35em 0.7em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+#urlInput {
+    background-color: transparent;
+    color: #FF9C14;
+    border: none;
+    border-bottom: 2px solid #FF6E14; /*darkOrange*/
+    text-align: left;
+    width: calc(100% - 190px);
+}
+
+/*--------------------------------
+related to the linksListSection
+--------------------------------*/
+#linksListSection {
+    background-color: white;
+    padding: 2em 0em;
+    margin: 1em 0em;
+    position: relative;
+    min-height: 300px;
+    width: 100%;
+
+}
+
+/*Draws the triangle in the bottom, though the triangle is not always centered*/
+#linksListSection:AFTER, #linksListSection:AFTER {
+    z-index: 0;
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    margin-left: -24%;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: solid 50px white;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+}
+
+.linkItem {
+    border-bottom: 1px solid #EEE;
+    display: inline-block;
+}
+
+.linkItem a {
+    color: #AA1423;
+    text-decoration: none;
+    float: left;
+}
+
+.linkItem span {
+    float: right;
+}
+
+/*--------------------------------
+related to the hitsSection
+--------------------------------*/
+#hitsSection {
+    padding: 2em 0em 2em;
+    margin: 1em 0em;
+}
+
+#hitsBox {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+    font-weight: normal;
+    color: #AA1423;
+    background-color: white;
+    display: inline-block;
+    border: 1px solid #babdb6;
+    border-radius: 4px;
+}
+/*--------------------------------*/
+
+footer {
+    color: #AA1423;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer span {
+    float: left;	
+}
+
+footer a {
+    float: right;
+    margin: 0em 0.7em;
+}
