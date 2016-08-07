@@ -82,7 +82,7 @@ function getTopN(urls, n) {
     return topN;
 }
 
-// based on the json urls, fills the linksList div with the links with the 
+// based on the json urls, fills the linksList div with the links with the
 // top n of links with the most hits
 function fillTopN(urls, n) {
     var topN = getTopN(urls, n);
