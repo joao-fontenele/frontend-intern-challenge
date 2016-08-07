@@ -24,7 +24,12 @@ function getId() {
 
 // dummy function to validade a url
 function isValidUrl(url) {
-    return true;
+    if (url) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 
 // main function called to generate and show the short urls, also changes the
@@ -102,7 +107,7 @@ function fillTopN(urls, n) {
 
 $(document).ready(function () {
 //    var requestUrl = "https://github.com/chaordic/frontend-intern-challenge/blob/master/Assets/urls.json";
-    var requestUrl = "./Assets/urls.json";
+    var requestUrl = "../Assets/urls.json";
     $.getJSON(requestUrl, function (urls) {
         fillTopN(urls, 5);
 
